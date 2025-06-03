@@ -7,6 +7,7 @@ https://drive.google.com/drive/folders/1NihTXXz9dUxkgAGh4Tq3KmnfCpz3N9Rx
 https://colab.research.google.com/drive/1ZlttT7fEikAYUlMxqpjkftzWrdzrYF4G#scrollTo=0LYYLOclJmQb
 
 **Link do Trello:**
+https://trello.com/b/E1HYqR46/bigdata
 
 ## dia 02/06/2025
 
