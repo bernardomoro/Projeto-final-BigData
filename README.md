@@ -1,5 +1,7 @@
 # Projeto-final-BigData
 
+### [Relatório final](/LaTeX/output.pdf)
+
 ## Links
 
 ### Pasta do Drive:
