@@ -16,3 +16,7 @@ https://trello.com/b/E1HYqR46/bigdata
 
 ### Overleaf:
 https://www.overleaf.com/project/684768317447662f6573beaf
+
+## Fluxograma
+
+![Fluxograma do projeto](/Fluxograma.png)
