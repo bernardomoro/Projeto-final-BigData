@@ -1,0 +1,265 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Adiciona smooth scroll globalmente */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+    position: sticky; /* Faz o header fixo no topo ao rolar */
+    top: 0;
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 10px; /* Reduzido para caber mais itens */
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.85em; /* Levemente reduzido */
+}
+
+header a:hover, header a.active { /* Adiciona classe active para link atual */
+    color: #0779e4;
+}
+
+/* Seção Hero (Início) */
+.hero {
+    background: #0779e4;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    margin-top: 70px; /* Compensa a altura do header fixo */
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background: #e67e22;
+}
+.btn-primary:hover {
+    background: #d35400;
+}
+.btn:hover {
+    background: #555;
+}
+
+/* Seções Gerais */
+section {
+    padding: 40px 0; /* Aumenta o padding para melhor espaçamento com header fixo */
+    border-top: 1px solid #eee; /* Adiciona uma linha sutil entre seções */
+}
+section:first-of-type {
+    border-top: none; /* Remove a borda da primeira seção após o hero */
+}
+
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    color: #333;
+    padding-top: 70px; /* Adiciona padding para o anchor não ficar sob o header fixo */
+    margin-top: -70px; /* Compensa o padding para manter o layout */
+}
+
+
+section h3 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #0779e4;
+}
+
+section h4 {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    color: #555;
+}
+
+section article {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+section ul li {
+    margin-bottom: 8px;
+}
+
+.intro-section h2 {
+    text-align: left;
+}
+.intro-section h3 {
+    color: #555;
+    font-size: 1.5em;
+}
+
+/* Perfis de Bibliotecas */
+.library-profile {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-left: 5px solid #0779e4;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.library-logo {
+    max-width: 80px; /* Ajustado para logos menores */
+    max-height: 80px;
+    float: right;
+    margin-left: 15px;
+    border: 1px solid #eee;
+    padding: 5px;
+    object-fit: contain; /* Garante que o logo caiba sem distorcer */
+}
+
+.library-profile p {
+    margin-bottom: 10px;
+}
+
+.btn-link {
+    color: #0779e4;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #0779e4;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade Simples */
+@media (max-width: 768px) {
+    header {
+        position: static; /* Remove o header fixo em telas menores se causar problemas */
+    }
+    .hero {
+        margin-top: 0; /* Remove a margem se o header não for fixo */
+    }
+    section h2 {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    header ul {
+        padding-top: 10px;
+    }
+    header li {
+        display: block;
+        padding: 8px 0;
+    }
+    .container {
+        width: 90%;
+    }
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    section h2 {
+        font-size: 1.8em;
+    }
+    section h3 {
+        font-size: 1.5em;
+    }
+    .library-logo {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+    }
+}
